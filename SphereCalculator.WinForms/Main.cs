@@ -27,11 +27,11 @@ namespace SphereCalculator.WinForms
             
             _calculator.Calculate(Convert.ToDouble(txtValue.Text), valueType);
 
-            lblRadius.Text = string.Format("{0:#,##0.########}", _calculator.Radius);
-            lblDiameter.Text = string.Format("{0:#,##0.########}", _calculator.Diameter);
-            lblCircumference.Text = string.Format("{0:#,##0.########}", _calculator.Circumference);
-            lblSurfaceArea.Text = string.Format("{0:#,##0.########}", _calculator.SurfaceArea);
-            lblVolume.Text =  string.Format("{0:#,##0.########}", _calculator.Volume);
+            lblRadius.Text = string.Format("{0:#,##0.########}", _calculator.Output.Radius);
+            lblDiameter.Text = string.Format("{0:#,##0.########}", _calculator.Output.Diameter);
+            lblCircumference.Text = string.Format("{0:#,##0.########}", _calculator.Output.Circumference);
+            lblSurfaceArea.Text = string.Format("{0:#,##0.########}", _calculator.Output.SurfaceArea);
+            lblVolume.Text =  string.Format("{0:#,##0.########}", _calculator.Output.Volume);
         }
 
         private CalculatorEnum GetValueType()

@@ -15,11 +15,11 @@ namespace SphereCalculator.ConsoleApp
 
         static void PrintResults()
         {
-            Console.WriteLine($"Radius: {_sphere.Radius}");
-            Console.WriteLine($"Diameter: {_sphere.Diameter}");
-            Console.WriteLine($"Circumference: {_sphere.Circumference}");
-            Console.WriteLine($"Surface Area: {_sphere.SurfaceArea}");
-            Console.WriteLine($"Volume: {_sphere.Volume}");
+            Console.WriteLine($"Radius: {_sphere.Output.Radius}");
+            Console.WriteLine($"Diameter: {_sphere.Output.Diameter}");
+            Console.WriteLine($"Circumference: {_sphere.Output.Circumference}");
+            Console.WriteLine($"Surface Area: {_sphere.Output.SurfaceArea}");
+            Console.WriteLine($"Volume: {_sphere.Output.Volume}");
         }
     }
 }
